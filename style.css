@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Raleway', 'serif';
+}
+
+.customerContainer{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5%;
+  margin-top: 1%;
+  text-align: center;
+}
+
+.customerCard{
+  flex: 1;
+  flex-basis: 25%;
+  padding: 2%;
+}
+
+ul{
+  list-style-type: none;
+  text-align: center;
+}
+
+img{
+  border-top-left-radius: 35%;
+  border-top-right-radius: 60%;
+  border-bottom-right-radius: 35%;
+  border-bottom-left-radius: 60%;
+}
+
+.customerNameText{
+  font-weight: bolder;
+}
+
+h3{
+  font-size: 15px;
+}
+
+a{
+  color: gray;
+  padding: 0;
+}
+
+.addressLine2{
+  padding-bottom: 5%;
+}

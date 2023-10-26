@@ -63,11 +63,13 @@ const usStates = [
 function nameToAbbr (stateName) {
   const idx = usStates.findIndex(function (state) {
     return state.name === stateName.toUpperCase()
+    //check if the argument converted to all capital letters (for comparison purposes)matches the name property, if it does save the index of the state in idx variable
   })
 
   if (idx === -1) {
     return null
   }
-
+    //if argument doesn't match, findIndex() will give -1 and return null
   return usStates[idx].abbreviation
+    //if argument matches, return the matching abbreviation property
 }
