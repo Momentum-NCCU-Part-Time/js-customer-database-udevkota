@@ -10,7 +10,7 @@ function customerToDom (customerData) {
   return `<div class="customerCard">
             <img src=${customerData.picture.large} class="customerHeadshot">
             <h2 class="customerNameText">${customerName}<h2>
-            <h3><a href="${customerData.email}">${customerData.email}</a></h3>
+            <a href="mailto:${customerData.email}" target="_blank">${customerData.email}</a>
             <ul class="customerInfo">
               <li class="addressLine1">${customerData.location.street.number} ${customerData.location.street.name}</li>
               <li class="addressLine2">${customerData.location.city}, ${nameToAbbr(customerData.location.state)} ${customerData.location.postcode}</li>
